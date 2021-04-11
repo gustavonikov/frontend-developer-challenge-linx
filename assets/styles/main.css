@@ -1,0 +1,34 @@
+/* == RESET == */
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+/* == MAIN STYLES == */
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+a {
+    text-decoration: none;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+/* == VARIABLES == */
+
+:root {
+    --white: #FFFFFF;
+    --darker-gray: #707070;
+    --gray: #888888;
+    --lighter-gray: #00000029;
+}
