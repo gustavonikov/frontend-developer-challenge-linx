@@ -1,6 +1,4 @@
 .button {
-    height: 39px;
-
     background-color: var(--white);
     color: var(--gray);
 
@@ -11,6 +9,18 @@
 
     font-size: 16px;
     line-height: 16px;
+}
+
+.heading_level_1 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.heading_level_2 {
+    font-size: 18px;
+    font-weight: bold;
+
+    color: var(--gray);
 }
 
 .input {
@@ -24,7 +34,7 @@
 
     font-size: 12px;
     
-    padding: 6px;
+    padding: 4px;
 
     outline: none;
 }
@@ -50,14 +60,14 @@
     margin-bottom: 0px;
 }
 
-.heading_level_1 {
-    font-size: 20px;
-    line-height: 24px;
-}
 
-.heading_level_2 {
-    font-size: 18px;
-    font-weight: bold;
+@media only screen and (max-width: 767.98px) {
+    .input {
+        width: 385px;
+    }
 
-    color: var(--gray);
+    .input[name=friend-name],
+    .input[name=friend-email] {
+        width: 391px;
+    }
 }
