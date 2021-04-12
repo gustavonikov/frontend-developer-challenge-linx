@@ -227,6 +227,8 @@
         padding: 5.5px;
 
         margin-left: 36px;
+
+        cursor: pointer;
     }
 
     .article {
