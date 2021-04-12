@@ -2,8 +2,8 @@ import api from '../services/api.js';
 import fetchProducts from '../services/fetchProducts.js';
 
 /* 
-    * Formats a float number in to a formatted string
-    * in the official currency of Brazil
+    * It formats the price for the standardization of the 
+    * official currency of Brazil
 
     * @return numeric string
 */
