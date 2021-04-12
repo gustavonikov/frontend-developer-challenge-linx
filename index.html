@@ -13,7 +13,7 @@
 <body>
     <header class="header">
         <div class="header__bg"></div>
-        <h1 class="header__title">
+        <h1 class="header__title heading_level_1">
             uma seleção de produtos
             <span class="header__title__emphasis">
                 especial para você
@@ -33,9 +33,9 @@
     <main class="main">
         <section class="section">
             <article class="article">
-                <h2 class="article__title">
+                <h1 class="article__title heading_level_1">
                     Ajude o algorítimo a ser mais certeiro
-                </h2>
+                </h1>
 
                 <p class="article__paragraph">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ultricies tellus nec mi porta
@@ -54,7 +54,7 @@
                     commodo, odio ante suscipit libero, at mattis augue est vel metus.
                 </p>
             </article>
-            <form action="post" class="section__form">
+            <form action="POST">
                 <div class="section__form__group">
                     <label class="label" for="name">Seu nome:</label>
                     <input class="input" type="text" name="name" required>
@@ -88,8 +88,8 @@
             </form>
         </section>
         <section class="section section_products">
-            <h2 class="dividing-line">
-                <span class="section__title">Sua seleção especial</span>
+            <h2 class="heading_level_2 dividing-line">
+                <span class="section_products__title-adapter">Sua seleção especial</span>
             </h2>
 
             <ul class="section__list">
@@ -182,12 +182,15 @@
                 </li>
                 <li class="section__list__item">
                     <img class="section__list__item__img" src="https://i.pinimg.com/236x/ab/ea/2e/abea2e30316f0bf4d7fef77f4baff4bb.jpg" alt="">
+                    
                     <h3 class="section__list__item__title">Nome do produto</h3>
+                    
                     <p class="section__list__item__paragraph">
                         Descrição do produto um pouco maior, com duas linhas ou 
                         três que explica melhor do que se trata.
                     </p>
-                    <span class="section__list__item__price">De: R$23,99</span>
+
+                    <span class="section__list__item__price">De: R$23,99</span>  
                     <span class="section__list__item__price section__list__item__price__emphasis">
                         Por: R$19,99
                     </span>
@@ -199,11 +202,14 @@
                 </li>
                 <li class="section__list__item">
                     <img class="section__list__item__img" src="https://i.pinimg.com/236x/ab/ea/2e/abea2e30316f0bf4d7fef77f4baff4bb.jpg" alt="">
+                    
                     <h3 class="section__list__item__title">Nome do produto</h3>
+                    
                     <p class="section__list__item__paragraph">
                         Descrição do produto um pouco maior, com duas linhas ou 
                         três que explica melhor do que se trata.
                     </p>
+
                     <span class="section__list__item__price">De: R$23,99</span>
                     <span class="section__list__item__price section__list__item__price__emphasis">Por: R$19,99</span>
                     <span class="section__list__item__price">ou 2x de R$9,99</span>
@@ -213,8 +219,38 @@
             </ul>
             <button class="button section__products__button" type="button">Ainda mais produtos aqui!</button>
         </section>
+        <section class="section section_friend-form">
+            <h2 class="heading_level_2 dividing-line">
+                <span class="section_friend-form__title-adapter">Compartilhe a novidade</span>
+            </h2>
+    
+            <p class="section_friend-form__paragraph">
+                Quer que seus amigos também ganhem a lista personalizada deles? 
+                Preencha agora!
+            </p>
+    
+            <form class="section_friend-form__form" action="GET">
+                <div class="section_friend-form__form__container">
+                    <div class="section__form__group section_friend-form__form__container__group">
+                        <label class="label" for="friend-name">
+                            Nome do seu amigo:
+                        </label>
+                        <input class="input" type="text" name="friend-name">
+                    </div>
+    
+                    <div class="section__form__group section__form__container__group">
+                        <label class="label" for="friend-email">
+                            E-mail:
+                        </label>
+                        <input class="input" type="email" name="friend-email">
+                    </div>
+                </div>
+                <button class="button section_friend-form__form__button" type="submit">Enviar agora</button>
+            </form>
+        </section>
     </main>
-    <footer></footer>
+    <footer class="footer">
+       
+    </footer>
 </body>
-
 </html>
