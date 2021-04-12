@@ -94,7 +94,6 @@
 .section__list {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 1fr 1fr;
     gap: 39px 41px;
 
     margin-top: 60px;
@@ -127,8 +126,6 @@
 
 .section__list__item__price {
     font-size: 12px;
-
-    display: block;
 }
 
 .section__list__item__price__emphasis {
