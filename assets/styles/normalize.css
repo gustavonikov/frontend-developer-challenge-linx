@@ -1,0 +1,63 @@
+.button {
+    height: 39px;
+
+    background-color: var(--white);
+    color: var(--gray);
+
+    border: 1px solid var(--darker-gray);
+    border-radius: 4px;
+
+    outline: none;
+
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.input {
+    height: 30px;
+    width: 340px;
+
+    background-color: var(--white);
+    color: var(--gray);
+
+    border: 1px solid var(--darker-gray);
+
+    font-size: 12px;
+    
+    padding: 6px;
+
+    outline: none;
+}
+
+.input_radio {
+    width: 14px;
+
+    margin-right: 5px;
+}
+
+.label {
+    font-size: 12px;
+    line-height: 14px;
+
+    color: var(--gray);
+
+    align-self: flex-start;
+
+    margin-bottom: 7px;
+}
+
+.label_input-radio {
+    margin-bottom: 0px;
+}
+
+.heading_level_1 {
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.heading_level_2 {
+    font-size: 18px;
+    font-weight: bold;
+
+    color: var(--gray);
+}

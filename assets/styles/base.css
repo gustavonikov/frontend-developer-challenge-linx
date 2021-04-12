@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body,
+input,
+button {
+    font-family: 'Helvetica Neue', sans-serif;
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+ul {
+    list-style: none;
+}
+
+:root {
+    --white: #FFFFFF;
+    --darker-gray: #707070;
+    --gray: #888888;
+    --lighter-gray: #00000029;
+}
