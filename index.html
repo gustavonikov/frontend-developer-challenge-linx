@@ -57,7 +57,7 @@
             <form action="#" method="POST">
                 <div class="section__form__group">
                     <label class="label" for="name">Seu nome:</label>
-                    <input class="input" type="text" name="name" required>
+                    <input class="input" type="text" name="name" pattern="^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$" title="Deve ser um nome válido." required>
                 </div>
                 <div class="section__form__group">
                     <label class="label" for="email">E-mail:</label>
@@ -65,7 +65,7 @@
                 </div>
                 <div class="section__form__group">
                     <label class="label" for="cpf">CPF:</label>
-                    <input class="input" type="text" name="cpf" minlength="11" maxlength="14" required>
+                    <input class="input" type="text" name="cpf" minlength="14" maxlength="14" pattern="([0-9]{3}[\.][0-9]{3}[\.][0-9]{3}[\-][0-9]{2})" title="Deve ser um CPF válido. ex: 302.405.608-20" required>
                 </div>
                 <div class="section__form__group section__form__group__flex-row">
                     <div class="section__form__group__input-radio">
@@ -116,9 +116,7 @@
                             Comprar
                         </a>
                     </div>
-                </li>
-
-                   
+                </li>   
             </ul>
             <button class="button section__products__button" type="button">
                 Ainda mais produtos aqui!
@@ -140,14 +138,14 @@
                         <label class="label" for="friend-name">
                             Nome do seu amigo:
                         </label>
-                        <input class="input" type="text" name="friend-name">
+                        <input class="input" type="text" name="friend-name" pattern="^[a-zA-Z]+(([',. -][a-zA-Z ])?[a-zA-Z]*)*$" title="Deve ser um nome válido." required>
                     </div>
     
                     <div class="section__form__group section_friend-form__form__container__group">
                         <label class="label" for="friend-email">
                             E-mail:
                         </label>
-                        <input class="input" type="email" name="friend-email">
+                        <input class="input" type="email" name="friend-email" required>
                     </div>
                 </div>
                 <button class="button section_friend-form__form__button" type="submit">Enviar agora</button>
