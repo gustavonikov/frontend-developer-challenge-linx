@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/assets/styles/index.css">
+    <link rel="stylesheet" href="./assets/styles/index.css">
     <title>Desafio | Frontend Developer</title>
 </head>
 
@@ -92,33 +92,10 @@
                 <span class="section_products__title-adapter">Sua seleção especial</span>
             </h2>
 
-            <ul class="section__list">
-                <li class="section__list__item">
-                    <img class="section__list__item__img" src="https://i.pinimg.com/236x/ab/ea/2e/abea2e30316f0bf4d7fef77f4baff4bb.jpg" alt="">
-
-                    <div>
-                        <h3 class="section__list__item__title">Nome do produto</h3>
-
-                        <p class="section__list__item__paragraph">
-                            Descrição do produto um pouco maior, com duas linhas ou 
-                            três que explica melhor do que se trata.
-                        </p>
-
-                        <p class="section__list__item__price">De: R$23,99</p>
-
-                        <p class="section__list__item__price__emphasis">
-                            Por: R$19,99
-                        </p>
-
-                        <p class="section__list__item__price">ou 2x de R$9,99</p>
-
-                        <a href="#" role="button" class="button section__list__item__link-button">
-                            Comprar
-                        </a>
-                    </div>
-                </li>   
+            <ul class="section__list" data-products-list>
             </ul>
-            <button class="button section__products__button" type="button">
+
+            <button class="button section__products__button" type="button" data-load-more-products>
                 Ainda mais produtos aqui!
             </button>
         </section>
@@ -162,5 +139,6 @@
             <p class="footer__content__paragraph">2019</p>
         </div>
     </footer>
+    <script type="module" src="./js/scripts/index.js"></script>
 </body>
 </html>
