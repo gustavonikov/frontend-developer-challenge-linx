@@ -8,6 +8,8 @@
     color: gray;
 
     margin-bottom: 30px;
+
+    position: relative;
 }
 
 .article__paragraph {
@@ -214,19 +216,32 @@
 }
 
 @media only screen and (max-width: 767.98px) {
-    .arrow-down {
+    .drop-down-arrow {
         border: solid var(--darker-gray);
         border-width: 0 2px 2px 0;
-        border-radius: 1px;
     
         display: inline-block;
-    
+
+        padding: 5.6px;
+
+        margin-left: 36px;
+
+    }
+
+    .drop-down-arrow_up {
+        transform: rotate(-135deg);
+        -webkit-transform: rotate(-135deg);
+
+        position: absolute;
+        top: 10px;
+    }
+
+    .drop-down-arrow_down {
         transform: rotate(45deg);
         -webkit-transform: rotate(45deg);
 
-        padding: 5.5px;
-
-        margin-left: 36px;
+        position: absolute;
+        top: 2px;
     }
 
     .article {
