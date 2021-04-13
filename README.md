@@ -44,5 +44,4 @@ First: I didn't know if I was supposed to do the README in English or Portuguese
 so i did it in English :).
 
 Second: I also didn't know if the Arrow in Section "Help improve the algorithm" in 
-the Mobile Layout was really a drop down or not, so I implemented a feature to open 
-and close the section according to the Arrow.
+the Mobile Layout was supposed to scroll to the top, but I did it any way.
