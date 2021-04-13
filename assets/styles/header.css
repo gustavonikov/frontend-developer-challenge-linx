@@ -6,8 +6,6 @@
     overflow: hidden;
 
     color: var(--white);
-
-    text-align: center;
 }
 
 .header__bg {
@@ -20,7 +18,6 @@
     width: 100%;
     height: 100%;
 
-    transform: skewY(5deg);
     transform-origin: top right;
 
     background: var(--darker-gray);
@@ -81,10 +78,8 @@
     line-height: 16px;
 }
 
-@media only screen and (max-width: 767.98px) {
+@media only screen and (max-width: 991.98px) {
     .header {
-        width: 100%;
-
         text-align: left;
         padding: 0 16px;
     }
@@ -106,5 +101,16 @@
 
         grid-template-columns: repeat(2, 1fr);
         gap: 20px 21px;
+    }
+}
+
+
+@media only screen and (min-width: 767.98px) {
+    .header {
+        text-align: center;
+    }
+
+    .header__bg {
+        transform: skewY(5deg);
     }
 }
