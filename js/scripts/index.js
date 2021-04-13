@@ -1,5 +1,6 @@
 import api from '../services/api.js';
 import fetchProducts from '../services/fetchProducts.js';
+import toggleSection from './toggleSection.js';
 
 /* 
     * It formats the price for the standardization of the 
@@ -82,3 +83,4 @@ async function loadProducts(currentPage) {
 }
 
 loadProducts(api);
+toggleSection();
