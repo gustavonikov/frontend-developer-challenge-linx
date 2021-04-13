@@ -8,7 +8,7 @@ that can help the users to interact with the site.
 
 ### Here you can found the live preview of the project's two Screens:
 - [Live preview - Landing](https://frontend-developer-challenge-linx-gustavonikov.vercel.app/)
-<br>
+
 - [Live preview - Email](https://frontend-developer-challenge-linx-gustavonikov.vercel.app/email.html)
 
 ## Getting Started
@@ -29,14 +29,16 @@ like live-server or  http-server
 ## Features
 
 <li>Listing of user's preferred products to checkout</li>
-<li>User's form to help the algorithm be more accurate</li>
+<li>User's form to help the algorithm be more accurate,
+that have an Arrow to close and open the section for small/medium devices.</li>
 <li>Newsletter form to share the site</li>
 <li>E-mail screen, to see how will appear to the user's e-mail.</li>
 
-<br>
+### Observations:
 
-![Landing Screen](public/internal-images/moveit-login.png)
+First: I didn't know if I was supposed to do the README in English or Portuguese,
+so i did it in English :)
 
-<br>
-
-![Email Screen](public/internal-images/moveit-login-forward.png)
+Second: I also didn't know if the Arrow in Section "Help improve the algorithm" in 
+the Mobile Layout was really a drop down or not, so I implemented a feature to open 
+and close the section according to the Arrow.
