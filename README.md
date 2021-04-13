@@ -15,7 +15,9 @@ that can help the users to interact with the site.
 
 You can use git clone to copy this repository by typing this command on your console:
 
-```bash https://github.com/gustavonikov/frontend-developer-challenge-linx.git ```
+```bash 
+https://github.com/gustavonikov/frontend-developer-challenge-linx.git 
+```
 
 or you can download the zip file and open it in your IDE/Computer.
 
