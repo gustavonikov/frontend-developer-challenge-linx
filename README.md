@@ -2,9 +2,9 @@
 
 ## Introduction
 
-The website, product of the Frontend Developer Challenge from Linx Company, contains a
+This website, product of the Linx Company's Frontend Developer Challenge, contains a
 landing page that shows the list of products most preferred by users, and also features
-that can help the users to interact with the site.
+that can help them interact with the website.
 
 ### Here you can found the live preview of the project's two Screens:
 - [Live preview - Landing](https://frontend-developer-challenge-linx-gustavonikov.vercel.app/)
