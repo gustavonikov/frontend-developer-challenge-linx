@@ -2,11 +2,12 @@ import api from '../services/api.js';
 import fetchProducts from '../services/fetchProducts.js';
 import scrollTop from './scrollTop.js';
 
-/* 
-    * It formats the price for the standardization of the 
-    * official currency of Brazil
+/**
+* It formats the price for the standardization of the 
+* official currency of Brazil
 
-    * @return numeric string
+* @param number
+* @return numeric string
 */
 function formatPrice(price) {
     return new Intl.NumberFormat( 
@@ -15,10 +16,17 @@ function formatPrice(price) {
     ).format(price);
 }
 
-/* 
-    * Receives the data of the product
+/**
+* Receives the data of the product
 
-    * @return li element with the data
+* @param number id
+* @param string name
+* @param string image
+* @param number oldPrice
+* @param number price
+* @param string description
+* @param object installments contains two properties: value and count, both numbers
+* @return li element with the data
 */
 function createProductCard({ id, name, image, oldPrice, price, description, installments }) {
     const productCard = document.createElement('li');
@@ -60,10 +68,11 @@ function createProductCard({ id, name, image, oldPrice, price, description, inst
     return productCard;
 }
 
-/* 
-    * Receives the current page url to fetch the products
+/** 
+* Receives the current page url to fetch the products
 
-    * @return the list of products for the client
+* @param string currentPage
+* @return the list of products for the client
 */
 async function loadProducts(currentPage) {
     const productsList = document.querySelector('ul[data-products-list]');
