@@ -3,12 +3,12 @@ import fetchProducts from '../services/fetchProducts.js';
 import scrollTop from './scrollTop.js';
 
 /**
-* It formats the price for the standardization of the 
-* official currency of Brazil
-
-* @param number
-* @return numeric string
-*/
+ * It formats the price for the standardization of the 
+ * official currency of Brazil
+ * 
+ * @param number The price to be formatted
+ * @return numeric string
+ */
 function formatPrice(price) {
     return new Intl.NumberFormat( 
         { style: 'currency', currency: 'BRL' }, 
@@ -17,17 +17,18 @@ function formatPrice(price) {
 }
 
 /**
-* Receives the data of the product
-
-* @param number id
-* @param string name
-* @param string image
-* @param number oldPrice
-* @param number price
-* @param string description
-* @param object installments contains two properties: value and count, both numbers
-* @return li element with the data
-*/
+ * Receives the data of the product
+ * 
+ * @param number id The product id
+ * @param string name The product name
+ * @param string image The path to the image
+ * @param number oldPrice The previous price of the product
+ * @param number price The product current price
+ * @param string description A brief description about the product
+ * @param object installments Contains two properties: value and count, both numbers. Representing the 
+ *      installment price and the quantity of the installment
+ * @return li element with the data
+ */
 function createProductCard({ id, name, image, oldPrice, price, description, installments }) {
     const productCard = document.createElement('li');
     productCard.classList.add('section__list__item');
@@ -69,11 +70,11 @@ function createProductCard({ id, name, image, oldPrice, price, description, inst
 }
 
 /** 
-* Receives the current page url to fetch the products
-
-* @param string currentPage
-* @return the list of products for the client
-*/
+ * Load the products based on the user's action to see more products
+ * 
+ * @param string currentPage The link of the current url to load the products
+ * @return the list of products for the client
+ */
 async function loadProducts(currentPage) {
     const productsList = document.querySelector('ul[data-products-list]');
 

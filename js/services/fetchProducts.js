@@ -1,3 +1,9 @@
+/**
+ * Gets the products from the server's route
+ * 
+ * @param string api Is the route of the api
+ */
+
 export default async function fetchProducts(api) {
     try {
         const res = await fetch(api);
