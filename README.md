@@ -34,8 +34,7 @@ you can install the http-server and run as well.
 ## Features
 
 <li>Listing of user's preferred products to checkout</li>
-<li>User's form to help the algorithm be more accurate,
-    that have an Arrow to close and open the section for small/medium devices</li>
+<li>User's form to help the algorithm be more accurate</li>
 <li>Newsletter form to share the site</li>
 <li>E-mail screen, to see how will appear to the user's e-mail.</li>
 
