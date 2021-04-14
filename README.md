@@ -22,7 +22,8 @@ git clone https://github.com/gustavonikov/frontend-developer-challenge-linx.git
 or you can download the zip file and open it in your IDE/Computer.
 
 Then you can open the html pages files normally in the folders, or you can utilize a server,
-like live-server or  http-server.
+downloading the extension "Live Server" on VsCode or utilizing NPM (Node Package Manager)
+you can install the http-server and run as well.
 
 ## Main Tools
 
